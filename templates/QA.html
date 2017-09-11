@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Home VideoSense | text-img matcher</title>
+
+    <meta name="description" content="textIMG matcher is a good api to use。">
+    <meta name="keywords" content="machine learning, NLTK, RESTfulAPI, flask, Mongodb">
+    <meta name="author" content="joe">
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/highlight.js/8.4/styles/monokai_sublime.min.css">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="../static/css/QA.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top site-navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="./"><img src="{{url_for('static',filename='img/vision.png')}} weigh=10px heigh=10px">VideoSense TextIMG Matcher API</a>
+            </div>
+            <form class="navbar-form navbar-left" role="search">
+              <div class="form-group">
+               <input type="text" class="form-control" placeholder="key word">
+              </div>
+               <button type="submit" class="btn btn-default btn-getting-started">Submit</button>
+            </form>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="./">Home</a>
+                    </li>
+                    <li><a href="docs/">Edit an article</a>
+                    </li>
+                    <li><a href="docs/getting-started/">Guide</a>
+                    </li>
+                    <li><a href="docs/api/">API</a>
+                    </li>
+                    <li><a href="docs/writing-a-plugin/">Plugin</a>
+                    </li>
+                    <li><a href="{{ url_for('login') }}">Sign In</a>
+                    </li>
+                    <li><a href="{{ url_for('regist') }}">Register</a>
+                    </li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+
+
+
+
+    <!-- Jumbotron -->
+    <header class="jumbotron">
+        <img class="hidden" src="img/gulp.png" width="800" height="600">
+        <h1><span class="text-hide">Text-img Matching<span><img class="logo" src="img/gulp-white-text.svg"></span></span></h1>
+        <p class="lead">Edit an article we can find Img, Article and generating video resourses for you</p>
+        <p><a class="btn btn-lg btn-default btn-getting-started" href="docs/getting-started/" role="button">GET START</a>
+        </p>
+    </header>
+
+    <main class="benefits container">
+        <!-- Example row of columns -->
+        <div class="row">
+            <div class="col-md-6">
+                <h2>EASY to USE</h2>
+                <p>Just start edit article, we can find imgs, text summary and similar articles for you </p>
+            </div>
+            <div class="col-md-6">
+                <h2>FAST to MATCH</h2>
+                <p>we provide emnbeding model to match your article fast</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h2>High QUALITY</h2>
+                <p>we use different model and mongodb for you to try out</p>
+            </div>
+            <div class="col-md-6">
+                <h2>EASY to LEARNING</h2>
+                <p>we provide research UI for you to try out and find best amount train data set to get the model</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Site footer -->
+    <footer class="footer fixed-button">
+        <div class="container">
+            <p>&copy; VideoSense 2017</p>
+            <p><a href="http://www.miibeian.gov.cn/" target="_blank">wujionghao</a> | NUS opensource student</p>
+        </div>
+    </footer>
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="http://cdn.bootcss.com/highlight.js/8.4/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+    <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="js/site.js"></script>
+    <script type="text/javascript">
+        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F3d8e7fc0de8a2a75f2ca3bfe128e6391' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+</body>
+
+</html>

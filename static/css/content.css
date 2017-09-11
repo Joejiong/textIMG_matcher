@@ -1,0 +1,95 @@
+/*----------desktop and large desktop styles-------*/
+body{
+  font: Georgia, Times New Roman;
+  font-size: 14px;
+  color:#444;
+}
+/*navbar styles*/
+nav ul li a{
+  letter-spacing: 3px;
+ }
+.banner{
+  background:url(https://dl.dropbox.com/s/mes5b4hy5ox8wl3/sweta_background.jpg?dl=0) 00 no-repeat;
+  background-size:cover;
+  height:600px;
+  margin-top: 0px !important;
+  padding-top:0px !important;
+}
+/*about styles*/
+#about{
+  margin-top: 65px;
+}
+#about h4{
+  border-bottom: 1px solid #eee;
+}
+#about img{
+  width:100px;
+  margin-top:20px;
+}
+#about p{
+  margin-top: 70px;
+}
+/*portfolio styles*/
+#portfolio{
+  margin-top: 65px;
+}
+#portfolio h4{
+  border-bottom: 1px solid #eee;
+}
+.work{
+  width:250px;
+  margin: 2% 5.7% 0;
+}
+.work p{
+  margin-top: 30px;
+}
+/*contact styles*/
+#contact{
+   margin-top: 65px;
+}
+#contact h4{
+  border-bottom: 1px solid #eee;
+}
+#contact i{
+  margin-top:30px;
+  margin-left:2%;
+  margin-right:2%;
+  color: #555;
+}
+/*footer styles*/
+footer{
+   margin-top: 65px;
+   background-color:#eee;
+}
+footer p{
+  padding:30px 0;
+}
+/*---------sm styles--------*/
+@media screen and (min-width: 768px) and (max-width:991px){
+  .banner{
+    margin-top: 0px !important;
+    padding-top:0px !important;
+  }
+  #about img{
+    width:150px;
+    margin:10px auto 0;
+  }
+  .work{
+    margin:10px auto 0;
+  }
+}
+/*--------xs styles-------*/
+@media screen and (max-width: 767px){
+
+  .banner{
+    margin-top: 0px !important;
+    padding-top:0px !important;
+}
+  #about img{
+    width:150px;
+    margin:10px auto 0;
+  }
+  .work{
+    margin:10px auto 0;
+  }
+}
